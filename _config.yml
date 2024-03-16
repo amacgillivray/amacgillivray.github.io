@@ -1,0 +1,21 @@
+plugins:
+    - jekyll-remote-theme
+remote_theme: amacgillivray/baltic
+
+title: Andrew MacGillivray
+author:
+  name: Andrew MacGillivray
+  email: agjmacgill@gmail.com
+
+theme: baltic
+colorset: light
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    default_lang: html
+    css_class: 'syntax'
