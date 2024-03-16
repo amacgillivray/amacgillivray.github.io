@@ -1,0 +1,135 @@
+.highlight {
+  background-color: #2e3440;
+  color: #eaf4f8;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 90ch;
+  overflow-x: scroll;
+  margin: 20px 0;
+}
+.highlight .hll {
+  background-color: #222d36;
+}
+.highlight .c,
+.highlight .ch,
+.highlight .cm,
+.highlight .cp,
+.highlight .cpf,
+.highlight .c1 {
+  color: #4f6a92;
+}
+.highlight .cs {
+  color: #86bfd4;
+  font-weight: 700;
+}
+.highlight .g,
+.highlight .p,
+.highlight .l,
+.highlight .x {
+  color: #f8fafe;
+}
+.highlight .k {
+  color: #5e81ac;
+  font-weight: 700;
+}
+.highlight .l,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .dl,
+.highlight .sd,
+.highlight .s2,
+.highlight .se,
+.highlight .sh,
+.highlight .si,
+.highlight .sx,
+.highlight .sr,
+.highlight .s1,
+.highlight .ss {
+  color: #a2bf8f;
+}
+.highlight .m,
+.highlight .mb,
+.highlight .mf,
+.highlight .mh,
+.highlight .mi,
+.highlight .mo,
+.highlight .il {
+  color: #b77fb1;
+}
+.highlight .n,
+.highlight .vc,
+.highlight .vg,
+.highlight .vi,
+.highlight .vm {
+  color: #ebb591;
+}
+.highlight .nc {
+  color: #92c1bf;
+}
+.highlight .nf {
+  color: #86bfd4;
+}
+.highlight .kd {
+  color: #7f9fbf;
+}
+.highlight .o {
+  color: #92c1bf;
+}
+
+html {
+  font-family: "Jetbrains Mono", "Courier New", monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2a3948;
+  color: #eaf4f8;
+}
+body.light {
+  background-color: #f8fafe;
+  color: #303b52;
+}
+
+h1 {
+  font-weight: 900;
+  color: #5e81ac;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto;
+  padding: 40px 10vw;
+  background-color: #24323f;
+  border-bottom: 4px solid #222d36;
+}
+.header .header-title-link {
+  font-weight: 700;
+  color: #eaf4f8;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.header .header-title-link:hover {
+  color: #f75341;
+}
+
+.content-area {
+  display: block;
+  max-width: 90vw;
+  margin: 40px 10vw;
+}
+.content-area p {
+  max-width: 90ch;
+}
+.content-area img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
