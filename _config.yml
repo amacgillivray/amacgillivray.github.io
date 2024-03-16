@@ -1,14 +1,12 @@
 plugins:
     - jekyll-remote-theme
 remote_theme: amacgillivray/baltic
+colorset: light
 
 title: Andrew MacGillivray
 author:
   name: Andrew MacGillivray
   email: agjmacgill@gmail.com
-
-theme: baltic
-colorset: light
 
 markdown: kramdown
 highlighter: rouge
