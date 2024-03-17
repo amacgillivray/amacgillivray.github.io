@@ -8,6 +8,9 @@ author:
   name: Andrew MacGillivray
   email: agjmacgill@gmail.com
 
+header_pages: 
+  - publications.md
+
 markdown: kramdown
 highlighter: rouge
 kramdown:
