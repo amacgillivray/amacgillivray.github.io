@@ -1,6 +1,6 @@
 .highlight {
   background-color: #2e3440;
-  color: #eaf4f8;
+  color: #eff2f4;
   border-radius: 12px;
   padding: 10px;
   box-sizing: border-box;
@@ -9,7 +9,7 @@
   margin: 20px 0;
 }
 .highlight .hll {
-  background-color: #222d36;
+  background-color: #222d3b;
 }
 .highlight .c,
 .highlight .ch,
@@ -89,11 +89,11 @@ body {
 }
 
 body {
-  background-color: #2a3948;
-  color: #eaf4f8;
+  background-color: #222d3b;
+  color: #eff2f4;
 }
 body.light {
-  background-color: #f8fafe;
+  background-color: #eceff4;
   color: #303b52;
 }
 
@@ -102,34 +102,216 @@ h1 {
   color: #5e81ac;
 }
 
+h3 {
+  font-weight: 200;
+}
+
+strong {
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  color: #86bfd4;
+  background-color: #86bfd4;
+  border-color: #86bfd4;
+  max-width: 90ch;
+  margin: 40px 0;
+}
+
 .header {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   padding: 40px 10vw;
   background-color: #24323f;
   border-bottom: 4px solid #222d36;
 }
 .header .header-title-link {
   font-weight: 700;
-  color: #eaf4f8;
-  text-decoration: none;
+  color: #eff2f4;
   transition: 0.2s;
 }
 .header .header-title-link:hover {
   color: #f75341;
 }
+.header .header-nav-link {
+  margin: 0 20px;
+  font-weight: 500;
+  color: #86bfd4;
+  transition: 0.2s;
+}
+.header .header-nav-link:hover {
+  color: #b77fb1;
+}
 
 .content-area {
   display: block;
   max-width: 90vw;
+  min-height: 75vh;
   margin: 40px 10vw;
 }
 .content-area p {
   max-width: 90ch;
+  line-height: 1.45;
+  font-size: 13px;
 }
+.content-area figure {
+  margin: 0;
+}
+.content-area figure figcaption {
+  margin: 10px 0 20px 12px;
+  padding: 12px;
+  border-left: 4px solid #f75341;
+  font-size: 0.85em;
+  font-style: italic;
+  color: #c0656f;
+}
+.content-area video,
 .content-area img {
   max-width: 100%;
   border-radius: 12px;
+}
+
+.publication {
+  font-size: smaller;
+}
+.publication .pub-title,
+.publication .pub-date,
+.publication .pub-meta_special,
+.publication .pub-venue_name,
+.publication .pub-meta-num,
+.publication .pub-author_is-site-author {
+  font-weight: 900;
+}
+.publication .pub-title,
+.publication .pub-venue_name {
+  color: #7f9fbf;
+}
+.publication .pub-meta {
+  color: #5e81ac;
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.publication .pub-meta,
+.publication .pub-authors {
+  padding-left: 10px;
+  font-size: smaller;
+}
+.publication .pub-authors {
+  margin-top: 0.65em;
+}
+.publication .pub-date,
+.publication .pub-meta_special {
+  color: #c0656f;
+}
+.publication .pub-meta_num {
+  color: #b77fb1;
+}
+.light .publication .pub-title,
+.light .publication .pub-venue_name {
+  color: #4f6a92;
+}
+.light .publication .pub-meta {
+  color: #5e81ac;
+}
+
+ul.link-list {
+  padding-left: 0;
+  margin-left: 0;
+}
+ul.link-list li {
+  list-style: none;
+  margin: 5px 0;
+}
+ul.link-list li a {
+  color: #b77fb1;
+  transition: 0.2s;
+}
+ul.link-list li a:hover {
+  color: #c0656f;
+}
+
+.baltic-footer {
+  display: block;
+  width: 100%;
+}
+.baltic-footer .copyright {
+  display: block;
+  padding: 10px 10vw;
+  font-size: smaller;
+  background-color: #2e3440;
+  color: #eff2f4;
+}
+.baltic-footer .copyright .symbol {
+  color: #7f9fbf;
+  font-weight: 700;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 360px auto;
+  grid-column-gap: 4ch;
+  background-color: #1F2632;
+  color: #e5e9f0;
+  padding: 20px 10vw;
+  font-size: small;
+}
+.light .footer-content {
+  background-color: #222d3b;
+}
+@media screen and (max-width: 800px) {
+  .footer-content {
+    grid-template-columns: auto;
+    grid-row-gap: 4ch;
+  }
+}
+
+.number {
+  color: #b77fb1;
+}
+
+.str-literal {
+  color: #a2bf8f;
+}
+.light .str-literal {
+  color: #9ab279;
+}
+a.str-literal {
+  text-decoration: underline;
+  transition: 0.2s;
+}
+a.str-literal:hover {
+  color: #86bfd4;
+}
+
+.class {
+  color: #5e81ac;
+}
+
+.common {
+  color: #92c1bf;
+}
+.light .common {
+  color: #72a19f;
+}
+
+.rare {
+  font-weight: 900;
+  color: #ebb591;
+}
+
+.json-meta {
+  font-size: smaller;
+  padding: 10px;
+  border-radius: 12px;
+  max-width: 80ch;
+  background-color: #2e3440;
+}
+.light .json-meta {
+  background-color: #eff2f4;
 }
 
 /*# sourceMappingURL=style.css.map */
