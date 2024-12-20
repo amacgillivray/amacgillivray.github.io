@@ -3,7 +3,7 @@ GEM
   specs:
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
-    baltic (0.0.2)
+    baltic (0.0.3)
       jekyll (>= 4.3.3, < 5.0)
     colorator (1.1.0)
     concurrent-ruby (1.2.3)
@@ -76,7 +76,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  baltic (~> 0.0.2)
+  baltic (~> 0.0.3)
   jekyll (~> 4.3.3)
   jekyll-remote-theme
 

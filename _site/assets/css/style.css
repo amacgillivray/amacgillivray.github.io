@@ -1,5 +1,4 @@
 .highlight {
-  background-color: #2e3440;
   color: #eff2f4;
   border-radius: 12px;
   padding: 10px;
@@ -7,9 +6,15 @@
   max-width: 90ch;
   overflow-x: scroll;
   margin: 20px 0;
+  background-color: #232732;
+}
+@media (prefers-color-scheme: light) {
+  .light .highlight {
+    background-color: #2e3440;
+  }
 }
 .highlight .hll {
-  background-color: #222d3b;
+  background-color: #282d3b;
 }
 .highlight .c,
 .highlight .ch,
@@ -63,6 +68,9 @@
 .highlight .vg,
 .highlight .vi,
 .highlight .vm {
+  color: #e5e9f0;
+}
+.highlight .nd, .highlight .kn {
   color: #ebb591;
 }
 .highlight .nc {
@@ -80,6 +88,7 @@
 
 html {
   font-family: "Jetbrains Mono", "Courier New", monospace;
+  background-color: #232732;
 }
 
 html,
@@ -89,12 +98,14 @@ body {
 }
 
 body {
-  background-color: #222d3b;
+  background-color: #2e3440;
   color: #eff2f4;
 }
-body.light {
-  background-color: #eceff4;
-  color: #303b52;
+@media (prefers-color-scheme: light) {
+  body.light {
+    background-color: #eceff4;
+    color: #303b52;
+  }
 }
 
 h1 {
@@ -112,6 +123,11 @@ strong {
 
 a {
   text-decoration: none;
+  color: #c0656f;
+}
+a:hover {
+  transition: 0.2s;
+  color: #f75341;
 }
 
 hr {
@@ -126,8 +142,7 @@ hr {
   display: grid;
   grid-template-columns: auto auto;
   padding: 40px 10vw;
-  background-color: #24323f;
-  border-bottom: 4px solid #222d36;
+  background-color: #181f2c;
 }
 .header .header-title-link {
   font-weight: 700;
@@ -177,14 +192,19 @@ hr {
 
 .publication {
   font-size: smaller;
+  margin-bottom: 20px;
 }
 .publication .pub-title,
 .publication .pub-date,
 .publication .pub-meta_special,
 .publication .pub-venue_name,
 .publication .pub-meta-num,
-.publication .pub-author_is-site-author {
+.publication .pub-author_is-site-author,
+.publication .pub-link-anchor {
   font-weight: 900;
+}
+.publication .pub-title {
+  margin-bottom: 4px;
 }
 .publication .pub-title,
 .publication .pub-venue_name {
@@ -193,14 +213,17 @@ hr {
 .publication .pub-meta {
   color: #5e81ac;
   line-height: 1.8;
+  margin-top: 0;
   margin-bottom: 0;
 }
 .publication .pub-meta,
-.publication .pub-authors {
+.publication .pub-authors,
+.publication .pub-summary {
   padding-left: 10px;
   font-size: smaller;
 }
-.publication .pub-authors {
+.publication .pub-authors,
+.publication .pub-summary {
   margin-top: 0.65em;
 }
 .publication .pub-date,
@@ -210,12 +233,31 @@ hr {
 .publication .pub-meta_num {
   color: #b77fb1;
 }
-.light .publication .pub-title,
-.light .publication .pub-venue_name {
-  color: #4f6a92;
-}
-.light .publication .pub-meta {
+.publication .pub-authors {
+  margin-top: 2px;
   color: #5e81ac;
+}
+.publication .pub-meta + .pub-meta {
+  margin-top: 2px;
+}
+.publication .pub-link-anchor {
+  color: #b77fb1;
+}
+.publication .pub-link-anchor:hover {
+  color: #f75341;
+}
+.publication .pub-summary {
+  padding-left: 20px;
+  font-size: 10px;
+}
+@media (prefers-color-scheme: light) {
+  .light .publication .pub-title,
+  .light .publication .pub-venue_name {
+    color: #4f6a92;
+  }
+  .light .publication .pub-meta {
+    color: #5e81ac;
+  }
 }
 
 ul.link-list {
@@ -242,25 +284,32 @@ ul.link-list li a:hover {
   display: block;
   padding: 10px 10vw;
   font-size: smaller;
-  background-color: #2e3440;
+  background-color: #4c576b;
   color: #eff2f4;
 }
 .baltic-footer .copyright .symbol {
   color: #7f9fbf;
   font-weight: 700;
 }
+@media (prefers-color-scheme: light) {
+  .light .baltic-footer .copyright {
+    background-color: #2e3440;
+  }
+}
 
 .footer-content {
   display: grid;
   grid-template-columns: 360px auto;
   grid-column-gap: 4ch;
-  background-color: #1F2632;
+  background-color: #232732;
   color: #e5e9f0;
   padding: 20px 10vw;
   font-size: small;
 }
-.light .footer-content {
-  background-color: #222d3b;
+@media (prefers-color-scheme: light) {
+  .light .footer-content {
+    background-color: #282d3b;
+  }
 }
 @media screen and (max-width: 800px) {
   .footer-content {
@@ -276,8 +325,10 @@ ul.link-list li a:hover {
 .str-literal {
   color: #a2bf8f;
 }
-.light .str-literal {
-  color: #9ab279;
+@media (prefers-color-scheme: light) {
+  .light .str-literal {
+    color: #9ab279;
+  }
 }
 a.str-literal {
   text-decoration: underline;
@@ -294,8 +345,10 @@ a.str-literal:hover {
 .common {
   color: #92c1bf;
 }
-.light .common {
-  color: #72a19f;
+@media (prefers-color-scheme: light) {
+  .light .common {
+    color: #72a19f;
+  }
 }
 
 .rare {
@@ -310,8 +363,10 @@ a.str-literal:hover {
   max-width: 80ch;
   background-color: #2e3440;
 }
-.light .json-meta {
-  background-color: #eff2f4;
+@media (prefers-color-scheme: light) {
+  .light .json-meta {
+    background-color: #eff2f4;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
