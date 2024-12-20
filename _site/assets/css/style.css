@@ -132,6 +132,7 @@ hr {
 .header .header-title-link {
   font-weight: 700;
   color: #eff2f4;
+  /* color: #eaf4f8; */
   transition: 0.2s;
 }
 .header .header-title-link:hover {
@@ -161,6 +162,11 @@ hr {
 .content-area figure {
   margin: 0;
 }
+
+.content-area figure {
+  margin: 0;
+}
+
 .content-area figure figcaption {
   margin: 10px 0 20px 12px;
   padding: 12px;
