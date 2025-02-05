@@ -109,7 +109,7 @@ This list includes both academic research and opinion articles.
 *My opinions are my own.*
 <br />&nbsp;<br />
 
-{%- include publication.html
+<!-- {%- include publication.html
     title="Protect the Second Amendment Because Seconds Matter"
     venue="The Wall Street Journal (Future View)"
     date="2022-05-24"
@@ -117,7 +117,7 @@ This list includes both academic research and opinion articles.
     link_text="www.wsj.com"
     authors="Andrew MacGillivray"
     summary="Opinion. Selected as one of five student opinions for the 'What Should We Do About Gun Violence?' prompt in the weekly WSJ Future View publication. Appears alongside independently-written essays from Max Willner-Giwerc (University of Chicago Law School), Alicia Liu (Swarthmore College), Lucas Sundwall (Quinnipiac University School of Law), and John Macejka (University of North Carolina)."
--%}
+-%} -->
 
 
 {%- include publication.html
